@@ -1,0 +1,25 @@
+(CV) C:\Users\aarya\Videos\deepfake-detection>python main.py
+--- Step 1: Data Preprocessing ---
+Found existing processed data. Loading splits.
+
+--- Step 2: Model Training ---
+Loading existing model from output\best_deepfake_model.pth
+
+--- Step 3: Model Evaluation on Labeled Test Set---
+
+Evaluation Metrics:
+  Accuracy: 0.9122
+  ROC-AUC: 0.9782
+  False Positive Rate: 0.1014
+  False Negative Rate: 0.0743
+
+--- Step 4: Explainability (Grad-CAM) ---
+Grad-CAM visualization saved to output\grad_cam_example.png
+
+--- Step 5: Ethical Analysis ---
+Ethics report generated and saved to output\ethics_report.md
+
+--- Step 6: Generating Submission File for Competition Data ---
+Generating predictions: 100%|██████████████████████████████████████████████████████| 400/400 [1:12:49<00:00, 10.92s/it]
+
+Submission file saved to output\submission.csv
