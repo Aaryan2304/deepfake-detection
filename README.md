@@ -18,7 +18,7 @@ This repository contains a comprehensive system for detecting deepfake videos an
   - [3. Running the Full Pipeline](#3-running-the-full-pipeline)
 - [Evaluation and Ethics](#evaluation-and-ethics)
 - [Explainability](#explainability)
-- [Next Steps: Docker & Cloud Deployment](#next-steps-docker--cloud-deployment)
+- [Live API Endpoint](#live-api-endpoint)
 
 ## Project Objective
 
@@ -119,6 +119,16 @@ As part of the pipeline, the system uses Grad-CAM to explain a sample prediction
 ![Grad-CAM Example](./output/grad_cam_example.png)
 *Figure: Grad-CAM visualization highlighting influential regions for a "fake" prediction.*
 
-## Next Steps: Docker & Cloud Deployment
+## Live API Endpoint
 
-To make this project more scalable and accessible, the next phase involves containerizing it with Docker and deploying it as a web service on a free cloud platform. This will allow anyone to get a prediction by simply uploading an image to a web interface. 
+This project has been containerized with Docker and is deployed as a live web service on Render.
+
+**API URL**: [https://deepfake-detector-api-vdin.onrender.com](https://deepfake-detector-api-vdin.onrender.com)
+
+You can interact with the live API directly through its documentation:
+
+**Interactive API Docs**: [https://deepfake-detector-api-vdin.onrender.com/docs](https://deepfake-detector-api-vdin.onrender.com/docs)
+
+From the docs page, you can upload an image and receive a real-time prediction from the deployed model.
+
+*Note: The service is hosted on a free tier and may "spin down" after a period of inactivity. The first request to an inactive service might take longer as the container starts up.* 
