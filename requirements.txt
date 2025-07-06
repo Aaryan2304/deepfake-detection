@@ -1,0 +1,41 @@
+# Core Dependencies
+torch>=1.9.0
+torchvision>=0.10.0
+opencv-python>=4.5.3
+numpy>=1.20.0
+scikit-learn>=0.24.2
+matplotlib>=3.4.2
+seaborn>=0.11.1
+pandas>=1.3.0
+tqdm>=4.61.2
+
+# Data Augmentation
+albumentations
+
+# Explainability
+grad-cam
+
+# Configuration
+pyyaml>=5.4.1
+
+# Deep Learning Utilities
+tensorboard>=2.6.0
+
+# API Framework
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Optional: Experiment tracking
+# wandb>=0.12.0
+
+# Optional: Face Recognition/Detection
+#face-recognition>=1.3.0
+#deepface
+#insightface
+#mediapipe>=0.8.8
+
+# Documentation and Development
+#jupyterlab>=3.0.16
+#notebook>=6.4.0
+# ipywidgets>=7.6.3 

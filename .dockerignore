@@ -1,0 +1,27 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large Dataset Folders
+DFDC/
+processed_data/
+
+# Local development environments
+.vscode/
+venv/
+.env
+
+# Output files that are not needed in the container
+output/Result.txt
+output/submission.csv
+output/ethics_report.md
+output/Figure_1.png
+output/Figure_2.png
+output/grad_cam_example.png
+output/evaluation_results.png 
