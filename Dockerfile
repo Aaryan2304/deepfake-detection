@@ -6,8 +6,9 @@ WORKDIR /app
 
 # Install system dependencies required by OpenCV.
 # libgl1-mesa-glx provides the missing libGL.so.1 library.
+# libglib2.0-0 provides the missing libgthread-2.0.so.0 library.
 # We also clean up the apt cache to keep the image lightweight.
-RUN apt-get update && apt-get install -y libgl1-mesa-glx && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0 && rm -rf /var/lib/apt/lists/*
 
 # Copy the requirements file into the container at /app
 COPY requirements.txt .
